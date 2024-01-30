@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lissiyas/static/css/main.a4b3659a.css",
+    "main.js": "/lissiyas/static/js/main.3e76e185.js",
+    "index.html": "/lissiyas/index.html",
+    "main.a4b3659a.css.map": "/lissiyas/static/css/main.a4b3659a.css.map",
+    "main.3e76e185.js.map": "/lissiyas/static/js/main.3e76e185.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4b3659a.css",
+    "static/js/main.3e76e185.js"
+  ]
+}
