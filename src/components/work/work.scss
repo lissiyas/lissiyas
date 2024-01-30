@@ -16,7 +16,7 @@
   color: #DDF7E3;
   max-width: 60rem;
   min-height: 4rem;
-  font-size: 24px; /* Adjust as needed */
+  font-size: 20px; /* Adjust as needed */
   font-weight: 600;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .animate-from-top {
-  transform: translateY(-100px);
+  transform: translateY(-50px);
   opacity: 0;
   transition: transform 0.5s, opacity 0.5s;
 }

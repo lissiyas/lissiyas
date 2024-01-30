@@ -1,5 +1,5 @@
-.container h2{
-    overflow-y: hidden;
+.container h2 {
+  overflow-y: hidden;
 }
 
 .box {
@@ -9,145 +9,104 @@
   border-radius: 30px;
 }
 
-
-.container-project{
+.container-project {
   min-height: 80vh;
-  
 }
-.project-title{
+
+.project-title {
   color: orangered;
 }
+
 .card {
-    justify-content: center;
-    width: 400px;
-    height: 300px;
-    background-color: #121212;
-    color: white;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    
-  
-    h2 {
-        margin-top: 0;
-        position: relative;
-        overflow-y: hidden;
-       
-        z-index: 2;
+  justify-content: center;
+  max-width: 500px; /* Adjusted max-width for responsiveness */
+  max-height: 300px;
+  background-color: #121212;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 
-    }
-  
-    p {
-        position: relative;
-        z-index: 2;
-    }
-  
-   
-  }
-  
-  .card:hover{
-    color: black;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+
+  h2 {
+      margin-top: 0;
+      position: relative;
+      overflow-y: hidden;
+      z-index: 2;
   }
 
-
-  .hidden{
-    opacity:0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
+  p {
+      position: relative;
+      z-index: 2;
   }
+}
 
-  .show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-  }
+.card:hover {
+  color: black;
+  background-color: chocolate;
+}
 
- 
 
-  
-  .container-project .btn{
-    z-index: 2;
-    width: 130px;
-    margin: auto;
-  }
-  .container-project a{
-    color: white;
-    z-index: 2;
-    text-decoration: none;
-  }
 
-  .skills {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.container-project .btn {
+  z-index: 2;
+  width: 130px;
+  margin: auto;
+}
+
+.container-project a {
+  color: white;
+  z-index: 2;
+  text-decoration: none;
+}
+
+.skills {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .el {
-    border-radius: 10px;
-    width: 150px;
-    height: 40px;
-    border: #ffffff;
-    border-style: solid;
-    border-width: 1px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin: 8px; /* Add some margin for spacing */
+  border-radius: 10px;
+  width: 150px; /* Make the elements take full width on small screens */
+  height: 40px;
+  border: #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin: 8px; /* Add some margin for spacing */
 }
 
-/* For screens up to 320px */
-@media screen and (max-width: 320px) {
-  .card {
-    margin-top: 10px;
-    width: 250px; /* Adjusted card width */
-   
-}
-
-.new-container {
-  width: 100%;
-  flex-direction: column; /* Updated to use flex-direction once */
-  
-}
-}
-/* For screens between 321px and 600px */
-@media screen and (min-width: 321px) and (max-width: 600px) {
+/* For screens up to 600px */
+@media screen and (max-width: 600px) {
   .new-container {
       width: 100%;
-      flex-direction: column; /* Updated to use flex-direction once */
-      
-      
+      flex-direction: column;
   }
-
-  .el {
-      width: 100%; /* Make the elements take full width on small screens */
-  }
-
+.hidden{
+    width: 100%;
+}
+  
   .card {
       margin-top: 10px;
-      width: 250px; /* Adjusted card width */
-     
+      
   }
 }
-
-/* For screens between 601px and 900px */
-@media screen and (min-width: 601px) and (max-width: 900px) {
-  .el {
-      width: 48%; /* Two elements in a row on medium screens */
-  }
-}
-
-/* For screens between 901px and 1200px */
-@media screen and (min-width: 901px) and (max-width: 1200px) {
-  .el {
-      width: 30%; /* Three elements in a row on large screens */
-  }
-}
-
-
