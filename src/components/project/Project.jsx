@@ -41,7 +41,7 @@ export default function Project() {
                         <div className="card-tittle" >
                             <h2 >Estate Management Admin</h2>
                         </div>
-                        <div className="ag-courses-item_bg"></div>
+                       
                         <p>Estate management admin with Login, Fully developed in django REST api and React.js </p>
                         <a href="https://github.com/lissiyas/django_api" target="_blank"
                             rel="noopener noreferrer" className="btn btn-outline-danger" role="button">
@@ -53,7 +53,7 @@ export default function Project() {
                     <div className="card hidden mx-4">
 
                         <h2 className="card-tittle">MARS LAB</h2>
-                        <div className="ag-courses-item_bg"></div>
+                        
                         <p>Indian Institute of Technology Guwahati(django dynamic webapp)</p>
                         <a href="https://github.com/lissiyas/marslab_iitg" target="_blank"
                             rel="noopener noreferrer" className="btn btn-outline-danger" role="button">

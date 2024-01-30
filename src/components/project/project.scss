@@ -44,25 +44,7 @@
         z-index: 2;
     }
   
-    .ag-courses-item_bg {
-        height: 128px;
-        width: 128px;
-        background-color: #f9b234;
-        border-radius: 50%;
-        position: absolute;
-        top: -75px;
-        right: -75px;
-        z-index: 1; // Lower than text
-        transition: transform 0.4s ease, opacity 0.5s ease;
-    }
-  
-    &:hover {
-        .ag-courses-item_bg {
-            transform: scale(7.5); // Adjust scale to cover the whole card
-            
-
-        }
-    }
+   
   }
   
   .card:hover{
@@ -85,10 +67,7 @@
 
  
 
-  .card:nth-child(2){
-    transition-delay: 200ms;
-  }
-
+  
   .container-project .btn{
     z-index: 2;
     width: 130px;
@@ -123,34 +102,52 @@
     margin: 8px; /* Add some margin for spacing */
 }
 
-/* Media Queries for responsiveness */
-@media screen and (max-width: 600px) {
-  .new-container{
-    width: 100%;
+/* For screens up to 320px */
+@media screen and (max-width: 320px) {
+  .card {
+    margin-top: 10px;
+    width: 250px; /* Adjusted card width */
    
-  }
-  .new-container{
-    flex-direction: column;
-  }
-    .el {
-        width: 100%; /* Make the elements take full width on small screens */
-    }
-    .card{
-      margin-top: 10px;
-    }
 }
 
-@media screen and (min-width: 601px) and (max-width: 900px) {
-    .el {
-        width: 48%; /* Two elements in a row on medium screens */
-    }
-}
-
-@media screen and (min-width: 901px) and (max-width: 1200px) {
-    .el {
-        width: 30%; /* Three elements in a row on large screens */
-    }
-}
-
+.new-container {
+  width: 100%;
+  flex-direction: column; /* Updated to use flex-direction once */
   
+}
+}
+/* For screens between 321px and 600px */
+@media screen and (min-width: 321px) and (max-width: 600px) {
+  .new-container {
+      width: 100%;
+      flex-direction: column; /* Updated to use flex-direction once */
+      
+      
+  }
+
+  .el {
+      width: 100%; /* Make the elements take full width on small screens */
+  }
+
+  .card {
+      margin-top: 10px;
+      width: 250px; /* Adjusted card width */
+     
+  }
+}
+
+/* For screens between 601px and 900px */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .el {
+      width: 48%; /* Two elements in a row on medium screens */
+  }
+}
+
+/* For screens between 901px and 1200px */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .el {
+      width: 30%; /* Three elements in a row on large screens */
+  }
+}
+
 
