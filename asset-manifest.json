@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/lissiyas/static/css/main.30f03b39.css",
-    "main.js": "/lissiyas/static/js/main.01949b21.js",
+    "main.css": "/lissiyas/static/css/main.98260c75.css",
+    "main.js": "/lissiyas/static/js/main.6911a122.js",
     "index.html": "/lissiyas/index.html",
-    "main.30f03b39.css.map": "/lissiyas/static/css/main.30f03b39.css.map",
-    "main.01949b21.js.map": "/lissiyas/static/js/main.01949b21.js.map"
+    "main.98260c75.css.map": "/lissiyas/static/css/main.98260c75.css.map",
+    "main.6911a122.js.map": "/lissiyas/static/js/main.6911a122.js.map"
   },
   "entrypoints": [
-    "static/css/main.30f03b39.css",
-    "static/js/main.01949b21.js"
+    "static/css/main.98260c75.css",
+    "static/js/main.6911a122.js"
   ]
 }
