@@ -1,0 +1,87 @@
+@import "../../global.scss";
+
+.equal-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card-header,
+.card-body {
+  flex: 1;
+  color: white;
+}
+
+.card-title {
+  color: #DDF7E3;
+  max-width: 60rem;
+  min-height: 4rem;
+  font-size: 24px; /* Adjust as needed */
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+.card-time {
+  font-weight: 100;
+}
+
+.work-exp {
+  overflow-y: hidden;
+  color: $mainColor;
+  font-weight: 600;
+}
+
+.animate-from-top {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.animate-from-left {
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.animate-from-right {
+  transform: translateX(100px);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .equal-card {
+    width: 100%;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .equal-card {
+    width: 100%;
+    font-size: smaller;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+  .card-body{
+    width:28rem;
+  }
+
+
+  .container-work{
+    width: 100%;
+  }
+}

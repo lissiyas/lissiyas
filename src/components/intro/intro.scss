@@ -1,0 +1,195 @@
+@import "../../global.scss";
+$image-url: "../../intro.jpeg";
+
+.container{
+  width: 70rem;
+
+}
+
+img{
+  margin-top: 100px;
+  max-height: 30rem;
+  max-width: 20rem;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+#myElement {
+  height: 40px; /* Adjust as needed */
+  overflow: hidden; /* Prevents content from spilling out */
+  color: orangered;
+  font-size: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: left; /* Center the icons */
+  align-items: center; /* Align icons vertically */
+}
+
+.social-icons  {
+  .linkedin{
+    color: #0077b5 ;
+  }
+  .instagram{
+    color:  brown;
+  }
+  .google{
+    color: green;
+    
+  }
+  p{
+    font-size: 20px; /* Increase the size of the icons */
+   /* Change the color to orange-red */
+  margin: 0 15px; 
+
+  }
+
+  /* Add horizontal margin for spacing between icons */
+}
+
+
+.introContent{
+  min-height: 100vh;
+}
+
+.intro-content{
+  color: rgb(220, 220, 220);
+  font-weight: 100;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+  display: flex;
+  .h {
+    font-size: 10px;
+  }
+}
+
+
+.running-1{
+  color: white;
+  height: 50px;
+  overflow-y: hidden;
+}
+.running{
+  color: black;
+}
+.intro {
+ margin-top: 60px;
+  text-align: left;
+  justify-content: left;
+  @include mobile {
+    align-items: center;
+  }
+  
+ 
+
+
+  
+  .right {
+    flex: 0.5;
+    position: relative;
+  
+    .wrapper {
+      
+      width: 100%;
+      color: white;
+      height: 100%;
+      padding-left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family:'Roboto Mono', monospace ;
+  
+      @include mobile {
+        padding-left: 0;
+        align-items: center;
+      }
+      
+      .intro-content{
+        @include mobile{
+            
+            width: auto;
+            margin: 10px;
+            align-items: center;
+            justify-content: center;
+        
+        }
+      }
+      h1 {
+        font-size: 60px;
+        margin: 10px 0;
+        color: #00702b;
+  
+        @include mobile {
+          font-size: 40px;
+        }
+      }
+      h2 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 30px;
+        overflow-y: hidden;
+  
+        @include mobile {
+          font-size: 20px;
+        }
+  
+        span {
+          font-size: inherit;
+          color: crimson;
+        }
+  
+        .ityped-cursor {
+          animation: blink 1s infinite;
+        }
+  
+        @keyframes blink {
+          50% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  
+    a {
+      position: absolute;
+      bottom: 10px;
+      left: 40%;
+  
+      img {
+        width: 30px;
+        animation: arrowBlink 2s infinite;
+      }
+  
+      @keyframes arrowBlink {
+        100% {
+          opacity: 0;
+        }
+      }
+    }
+  
+    p {
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+    }
+  }
+  
+}
+
+
+@media screen and (max-width: 600px) {
+  .introContent {
+      width: 80%; /* Three elements in a row on large screens */
+  }
+  img{
+    width: 80%;
+  }
+}
+

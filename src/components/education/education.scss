@@ -1,0 +1,54 @@
+/* CSS */
+
+.edu-title{
+  color: orangered;
+}
+.container.custom-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.education-card-body {
+  
+  margin-bottom: 20px; /* Adjust as needed */
+  color: white;
+  .education-card-title{
+    font-weight: 600;
+  }
+}
+
+.custom-card-width {
+  width: 100%; /* Adjust the width as per your design requirement */
+  /* Other styling as needed */
+}
+
+.hidden-new{
+  /* Adjust width as needed */
+  
+  max-width: 900px; 
+  opacity:0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+
+ .education-card-body:nth-child(2){
+  transition-delay: 200ms;
+}
+
+
+@media screen and (max-width: 600px) {
+ 
+  .container.custom-card-container{
+    width: 80%;
+  }
+}

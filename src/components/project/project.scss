@@ -1,0 +1,156 @@
+.container h2{
+    overflow-y: hidden;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: white;
+  border-radius: 30px;
+}
+
+
+.container-project{
+  min-height: 80vh;
+  
+}
+.project-title{
+  color: orangered;
+}
+.card {
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    background-color: #121212;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    
+  
+    h2 {
+        margin-top: 0;
+        position: relative;
+        overflow-y: hidden;
+       
+        z-index: 2;
+
+    }
+  
+    p {
+        position: relative;
+        z-index: 2;
+    }
+  
+    .ag-courses-item_bg {
+        height: 128px;
+        width: 128px;
+        background-color: #f9b234;
+        border-radius: 50%;
+        position: absolute;
+        top: -75px;
+        right: -75px;
+        z-index: 1; // Lower than text
+        transition: transform 0.4s ease, opacity 0.5s ease;
+    }
+  
+    &:hover {
+        .ag-courses-item_bg {
+            transform: scale(7.5); // Adjust scale to cover the whole card
+            
+
+        }
+    }
+  }
+  
+  .card:hover{
+    color: black;
+  }
+
+
+  .hidden{
+    opacity:0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+  }
+
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+
+ 
+
+  .card:nth-child(2){
+    transition-delay: 200ms;
+  }
+
+  .container-project .btn{
+    z-index: 2;
+    width: 130px;
+    margin: auto;
+  }
+  .container-project a{
+    color: white;
+    z-index: 2;
+    text-decoration: none;
+  }
+
+  .skills {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.el {
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    border: #ffffff;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 8px; /* Add some margin for spacing */
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 600px) {
+  .new-container{
+    width: 100%;
+   
+  }
+  .new-container{
+    flex-direction: column;
+  }
+    .el {
+        width: 100%; /* Make the elements take full width on small screens */
+    }
+    .card{
+      margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .el {
+        width: 48%; /* Two elements in a row on medium screens */
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+    .el {
+        width: 30%; /* Three elements in a row on large screens */
+    }
+}
+
+  
+
