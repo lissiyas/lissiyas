@@ -22,7 +22,7 @@ useEffect(() => {
     <div className={"menu " + (menuOpen && "active")}>
       <ul>
         <li onClick={() => setMenuOpen(false)}>
-          <a href="/">Home</a>
+          <a href="#intro">Home</a>
         </li>
         <li onClick={() => setMenuOpen(false)}>
           <a href="#work">Work Experience</a>

@@ -195,3 +195,28 @@ img{
   }
 }
 
+
+.right .el {
+  text-decoration: none;
+  /* Define the initial styles for the element */
+
+  color: white;
+  transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.right .el:hover {
+  background-color: #2ecc71;
+  color: black;
+  animation: hoverAnimation 300ms ease-in-out;
+}
+
+@keyframes hoverAnimation {
+  0% {
+    background-color: #2ecc71;
+    color: white;
+  }
+  100% {
+    background-color: #2ecc71;
+    color: black;
+  }
+}
