@@ -27,9 +27,11 @@ export default function Intro() {
                         <div className="mb-4"><div id="myElement">
                         </div></div>
                         <div className="social-icons">
-                            <p className="linkedin"><FontAwesomeIcon icon={faLinkedin} /></p>
-                            <p className="instagram"><FontAwesomeIcon icon={faInstagram} /></p>
-                            <p className="google"><FontAwesomeIcon icon={faGoogle} /></p>
+                        <a href="https://www.linkedin.com/in/lissiyas/" className="linkedin mx-2">
+  <FontAwesomeIcon icon={faLinkedin} />
+</a>
+                            <a className="instagram mx-2 " href="https://www.instagram.com/lysias_antony/"><FontAwesomeIcon icon={faInstagram} /></a>
+                            <a className="google mx-2"  href="mailto:jvlissiyas@gmail.com"><FontAwesomeIcon icon={faGoogle} /></a>
                         </div>
                         
 
