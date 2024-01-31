@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/lissiyas/static/css/main.1cc37306.css",
-    "main.js": "/lissiyas/static/js/main.08f22e27.js",
+    "main.css": "/lissiyas/static/css/main.9f25bea2.css",
+    "main.js": "/lissiyas/static/js/main.69226c96.js",
+    "static/media/Lissiyas_Antony.pdf": "/lissiyas/static/media/Lissiyas_Antony.7e2936e10ddee0d67523.pdf",
     "index.html": "/lissiyas/index.html",
-    "main.1cc37306.css.map": "/lissiyas/static/css/main.1cc37306.css.map",
-    "main.08f22e27.js.map": "/lissiyas/static/js/main.08f22e27.js.map"
+    "main.9f25bea2.css.map": "/lissiyas/static/css/main.9f25bea2.css.map",
+    "main.69226c96.js.map": "/lissiyas/static/js/main.69226c96.js.map"
   },
   "entrypoints": [
-    "static/css/main.1cc37306.css",
-    "static/js/main.08f22e27.js"
+    "static/css/main.9f25bea2.css",
+    "static/js/main.69226c96.js"
   ]
 }
