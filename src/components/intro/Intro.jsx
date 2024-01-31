@@ -43,7 +43,7 @@ export default function Intro() {
                         <h3 className=" mt-4 intro-content">
                             An active, motivated, and highly dynamic individual with great working skills and a wide range of practical and theoretical computer science and engineering experience. Design, build and execute software applications that meet complex and critical business needs.
                         </h3>
-                        <a className="el" href={Resume} download="Lissiyas_Antony.pdf">
+                        <a className="el mb-3 mt-2" href={Resume} download="Lissiyas_Antony.pdf">
         Resume
       </a>
 

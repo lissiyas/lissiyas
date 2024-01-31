@@ -36,7 +36,7 @@ export default function Work() {
 
     return (
         <div className='container  container-work justify-content-center' >
-            <h2 className='text-center work-exp ' id="work">WORK EXPERIENCE</h2>
+            <h2 className='text-center work-exp mt-4 mb-4' id="work">WORK EXPERIENCE</h2>
             <h1 className='card-title job-title animate-from-top'  >Junior Research Fellow</h1>
 
             <div className=" justify-content-end"> {/* Align to the end (right) */}
