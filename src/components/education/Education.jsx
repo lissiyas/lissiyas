@@ -46,9 +46,9 @@ export default function Education() {
                         <div className="mx-auto">
                             <h5 className="education-card-title mt-3">Bachelor Of Technology In Computer Science And Engineering</h5>
                             <ul>
-                                <li>  Rajiv Gandhi Institute Of Technology, Kottayam, India </li>
+                                <li> Kerala university </li>
                                 <li>
-                                    <p>AUG 2019 - JULY 2021</p>
+                                    <p>AUG 2014 - JULY 2018</p>
                                 </li>
                             </ul>
                         </div>

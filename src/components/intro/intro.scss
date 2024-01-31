@@ -7,7 +7,7 @@ $image-url: "../../intro.jpeg";
 }
 
 img{
-  margin-top: 100px;
+  margin-top: 150px;
   max-height: 30rem;
   max-width: 20rem;
   object-fit: cover;
@@ -49,9 +49,7 @@ img{
 }
 
 
-.introContent{
-  min-height: 100vh;
-}
+
 
 .intro-content{
   color: rgb(220, 220, 220);
@@ -181,6 +179,10 @@ img{
     }
   }
   
+}
+
+.social-icons a {
+  font-size: 20px; /* Adjust the value to increase or decrease the size */
 }
 
 
