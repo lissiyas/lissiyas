@@ -79,7 +79,7 @@ export default function Work() {
 
 
                         <h5 className='card-text job-place' onClick={redirectToExternalSite}>Dayspring Technologies</h5>
-                        <p className='card-time'>Feb 2023 - Dec 2023</p>
+                        <p className='card-time'>Jan 2022 - Jan 2023</p>
 
                     </div>
                     <div className="card-body  card-content ">
