@@ -10,6 +10,13 @@ import { DjangoFill, PythonFill, ReactFill, FigmaFill, PostgresqlFill, Javascrip
 
 export default function Project() {
 
+   const handleClick = () =>{
+    const url  = "jvlissiyas@gmail.com";
+   
+    const message = "Oops! This repository is private. Please contact me at " + url + " to discuss access.";
+    alert(message, '_blank', 'noreferrer,width=600,height=400');
+
+   }
 
 
 
@@ -42,7 +49,7 @@ export default function Project() {
                             <h2>Estate Management Admin</h2>
                         </div>
                         <p>Estate management admin with Login, Fully developed in Django REST API and React.js</p>
-                        <a href="https://github.com/lissiyas/estate-admin" target="_blank" rel="noopener noreferrer" className="btn btn-outline-danger" role="button">
+                        <a href="https://github.com/lissiyas/django-api-estate" target="_blank" rel="noopener noreferrer" className="btn btn-outline-danger" role="button">
                             Read More
                         </a>
                     </div>
@@ -53,7 +60,7 @@ export default function Project() {
                             <h2>MARS LAB</h2>
                         </div>
                         <p>Indian Institute of Technology Guwahati (Django dynamic web app)</p>
-                        <a href="https://github.com/lissiyas/marslab_iitg" target="_blank" rel="noopener noreferrer" className="btn btn-outline-danger" role="button">
+                        <a href=' ' onClick={handleClick} rel="noopener noreferrer" data-bs-toggle="modal" data-bs-target="#staticBackdrop" className="btn btn-outline-danger" role="button">
                             Read More
                         </a>
                     </div>
